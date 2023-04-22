@@ -58,7 +58,7 @@ public class CustomerServiceImpl implements CustomerService {
 		int smallestValue=Integer.MAX_VALUE;
 		Driver finalDriver=null;
 		for(Driver driver:driverList){
-			if(driver.getCab().isAvailable()) {
+			if(driver.getCab().getAvailable()) {
 				if (driver.getDriverId() < smallestValue) {
 					smallestValue = driver.getDriverId();
 					finalDriver=driver;

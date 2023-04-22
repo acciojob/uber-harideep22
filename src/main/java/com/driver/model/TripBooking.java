@@ -11,6 +11,17 @@ public class TripBooking {
     private String toLocation;
     private int distanceInKm;
 
+    public TripBooking(int tripBookingId, String fromLocation, String toLocation, int distanceInKm, TripStatus status, int bill, Driver driver, Customer customer) {
+        this.tripBookingId = tripBookingId;
+        this.fromLocation = fromLocation;
+        this.toLocation = toLocation;
+        this.distanceInKm = distanceInKm;
+        this.status = status;
+        this.bill = bill;
+        this.driver = driver;
+        this.customer = customer;
+    }
+
     @Enumerated(EnumType.STRING)
     private TripStatus status;
     private int bill;
